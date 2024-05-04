@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+    <script src="./Movement.js"></script>
+</head>
+<body>
+  <p timeout="10000">Hello</p>
+    <a-scene>
+        <a-camera position="0 8 17"></a-camera>
+        <a-assets>
+            <img id="ground" src="./assets/Images/grass.jpeg">
+            <img id="sky" src="./assets/Images/sky.jpeg">
+        </a-assets>
+        <a-sky src="#sky"></a-sky>
+
+        <a-plane
+            id="ground"
+            color="#030C01"
+            position="0 0 0"
+            rotation="-90 0 0"
+            width="200"
+            height="200"
+          ></a-plane>
+          <a-box
+            id="platform"
+            color="red"
+            position="0 1 17"
+            width="5"
+            height="0"
+          ></a-box>
+          <!--Head-->
+        <a-entity id="model" model-movement>
+        <a-box
+        id="head"
+        position="0 10 10"
+        color="#FDC787"
+        width="2.5"
+        height="2.5"
+        ></a-box>
+        <a-box
+        id="eye1"
+        position="-0.75 10.2 10.2"
+        color="white"
+        width=".25"
+        height=".25"
+        ></a-box>
+        <a-box
+        id="eye1"
+        position="-0.5 10.2 10.2"
+        color="black"
+        width=".25"
+        height=".25"
+        ></a-box>
+
+        <a-box
+        id="eye2"
+        position="0.75 10.2 10.2"
+        color="white"
+        width=".25"
+        height=".25"
+        ></a-box>
+        <a-box
+        id="eye2"
+        position="0.5 10.2 10.2"
+        color="black"
+        width=".25"
+        height=".25"
+       ></a-box>
+       <a-box
+       id="nose"
+       position="-0.25 10 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="nose"
+       position="0 10 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="nose"
+       position="0.25 10 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="nose"
+       position="0.25 10 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="mouth"
+       position="-0.5 9.5 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="mouth"
+       position="-0.25 9.5 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="mouth"
+       position="0 9.5 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="mouth"
+       position="0.25 9.5 10.2"
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="mouth"
+       position="0.5 9.5 10.2 "
+       color="#DB9361"
+       width=".25"
+       height=".25"
+       ></a-box>
+       <a-box
+       id="hair"
+       position="0 11 10.1"
+       color="black"
+       width="2.65"
+       height="0.75s"
+       ></a-box>
+       <!--Body-->
+       <a-box
+       id="body"
+       position="0 7.2 10" 
+       color="#04777C"
+       width="2.5"
+       height="3"
+       ></a-box>
+       <a-box
+       id="hand"
+       position="1.7 7.7 10" 
+       color="#04777C"
+       width="0.8"
+       height="2"
+       ></a-box>
+       <a-box
+       id="hand"
+       position="1.7 6.8 10" 
+       color="#FDC787"
+       width="0.8"
+       height="0.2"
+       ></a-box>
+       <a-box
+       id="hand"
+       position="-1.7 7.7 10" 
+       color="#04777C"
+       width="0.8"
+       height="2"
+       ></a-box>
+       <a-box
+       id="hand"
+       position="-1.7 6.8 10" 
+       color="#FDC787"
+       width="0.8"
+       height="0.2"
+       ></a-box>
+       <a-box
+       id="legs"
+       position="0.7 4.4 10" 
+       color="black"
+       width="1.2"
+       height="2.5"
+       ></a-box>
+       <a-box
+       id="legs"
+       position="-0.7 4.4 10" 
+       color="black"
+       width="1.2"
+       height="2.5"
+       ></a-box>
+    </a-entity>
+    </a-scene>
+</body>
+</html>
